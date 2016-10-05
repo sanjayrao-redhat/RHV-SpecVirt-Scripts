@@ -1,0 +1,9 @@
+PDB DEBUGGING HELP 
+
+list → tells you where you are with respect to the code 
+next → go to every line of code one at a time
+p object (i.e. vm_cluster, vm_name etc.) → tells you all the methods 
+associated with that object
+print ‘\n’.join(dir(object)) → also tells you all the methods associated 
+with that object but formatted in a neat way
+

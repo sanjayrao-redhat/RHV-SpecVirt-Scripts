@@ -1,0 +1,74 @@
+What each script does:
+
+1. add_vm_nic.py:
+
+   - ARGUMENTS: vm name
+   - FUNCTIONS:
+      - sets all the nic parameters for that VM
+      - adds the nic to that VM
+
+2. add_vm.py:
+
+   - ARGUMENTS: vm name
+   - FUNCTIONS:
+      - sets all the parameters to create a VM
+      - based off a BLANK template
+
+3. box_data.py:
+   
+   - ARGUMENTS: none
+   - FUNCTIONS:
+      - lists all the information pertaining to a 
+        particular box (in this case dhcp31-79)
+
+4. cloned_vm.py:
+   
+   - ARGUMENTS (in order): vm name, template 
+   - FUNCTIONS:
+      - create a new VM based off an existing template
+        as opposed to a Blank template
+
+5. connect_test.py:
+
+   - ARGUMENTS: none
+   - FUNCTIONS:
+      - just a test to make sure that you're connected to 
+        your box
+
+6. define_template.py:
+
+   - ARGUMENTS (in order): vm name (existing vm), template name (the template created by this script will be referred to by this name)
+   - FUNCTIONS:
+      - takes in an existing vm to make a template based off of it
+      - add the template to list of templates
+
+7. start_vm.py:
+
+   - ARGUMENTS: vm name
+   - FUNCTIONS:
+      - takes in vm name to start that vm
+
+8. stop_vm.py:
+
+   - ARGUMENTS: vm name
+   - FUNCTIONS: 
+      - takes in vm name to stop that vm
+
+9. vm_boot_disk.py:
+
+   - ARGUMENTS: vm name
+   - FUNCTIONS:
+      - sets several boot disk parameters
+      - adds disk parameter to said vm
+
+10. vm_info.py:
+
+    - ARGUMENTS: vm name
+    - FUNCTIONS:
+       - takes in a vm name to give all the following information in return:
+          - what host vm is running on
+          - what cluster vm is part of
+          - number of vcpu(s)
+          - what template the vm is based off of (if its not based off a template, it'll say Blank)
+          - hosts available for migration
+ 
